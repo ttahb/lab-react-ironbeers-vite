@@ -13,6 +13,7 @@ function AllBeersPage() {
     
     return(
         <div>
+            {!beers && <h2>Loading...</h2>}
             {
                 beers.map(beer=> {
                     return (
